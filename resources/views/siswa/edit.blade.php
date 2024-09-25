@@ -3,7 +3,7 @@
 @section('konten')
     <h4>Edit Siswa</h4>
 
-    <form action="{{ route('siswa.update', '$siswa->id') }}" method="post">
+    <form action="{{ route('siswa.update', $siswa->id) }}" method="post">
         @csrf
         <label>NIS</label>
         <input type="number" name="nis" value="{{ $siswa->nis }}" class="form-control mb-2">
